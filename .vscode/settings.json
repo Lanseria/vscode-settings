@@ -1,10 +1,4 @@
 {
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "cSpell.userWords": [
@@ -89,9 +83,9 @@
   // this might not be up to date with the repo, please check yourself
   // updated 2022-03-10 06:10
   // https://github.com/antfu/vscode-file-nesting-config
-  "explorer.experimental.fileNesting.enabled": true,
-  "explorer.experimental.fileNesting.expand": false,
-  "explorer.experimental.fileNesting.patterns": {
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
     "*.c": "$(capture).h",
     "*.cc": "$(capture).hpp, $(capture).h, $(capture).hxx",
     "*.cpp": "$(capture).hpp, $(capture).h, $(capture).hxx",
@@ -136,9 +130,10 @@
   "git.untrackedChanges": "separate",
   "github.copilot.enable": {
     "*": true,
-    "markdown": true,
+    "yaml": true,
     "plaintext": false,
-    "yaml": true
+    "markdown": true,
+    "json": true
   },
   "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
   "githubPullRequests.fileListLayout": "tree",
@@ -251,19 +246,20 @@
   "window.titleBarStyle": "custom",
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {},
-  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "Vitesse Dark",
-  "workbench.preferredLightColorTheme": "Vitesse Light",
+  // "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  // "workbench.preferredLightColorTheme": "Vitesse Light",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "welcomePage",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
-  "workbench.sideBar.location": "right",
-  "liveshare.accessibility.voice": "zh-CN-Xiaohan",
-  "workbench.productIconTheme": "icons-carbon",
-  "liveshare.allowInvites": "all",
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "workbench.colorTheme": "Gruvbox Dark Medium"
 }
